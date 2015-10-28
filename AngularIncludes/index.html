@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Angular Includes Test</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+</head>
+<body ng-controller="mainController">
+    <div class="container-fluid">
+        <div ng-include="'app/layout/navbar.html'"></div>
+        <h3>
+            {{message}}
+        </h3>
+        <div ng-include="'app/layout/footer.html'"></div>
+    </div>
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="app/app.js"></script>
+
+</body>
+</html>
