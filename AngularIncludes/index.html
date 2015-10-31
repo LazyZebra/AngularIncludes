@@ -8,10 +8,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div ng-include="'app/layout/navbar.html'"></div>
-        <h3>
-            {{message}}
-        </h3>
+        <div ng-include="'app/layout/topnav.html'"></div>
         <div ng-view></div>
         <div ng-include="'app/layout/footer.html'"></div>
     </div>
@@ -23,6 +20,7 @@
     <script src="app/app.js"></script>
     <script src="app/pages/home/homeController.js"></script>
     <script src="app/pages/about/aboutController.js"></script>
+    <script src="app/layout/topnavController.js"></script>
 
 </body>
 </html>

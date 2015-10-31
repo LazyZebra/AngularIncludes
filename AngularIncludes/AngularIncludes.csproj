@@ -68,7 +68,8 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\layout\footer.html" />
-    <Content Include="app\layout\navbar.html" />
+    <Content Include="app\layout\topnav.html" />
+    <Content Include="app\layout\topnavController.js" />
     <Content Include="app\pages\about\about.html" />
     <Content Include="app\pages\about\aboutController.js" />
     <Content Include="app\pages\home\home.html" />
