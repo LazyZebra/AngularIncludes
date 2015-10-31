@@ -1,11 +1,16 @@
 ﻿(function () {
+    "use strict";
 
-    var app = angular.module("app", []);
-
-    var mainController = function ($scope) {
-        $scope.message = "Main Controller";
-    };
-
-    app.controller("mainController", mainController);
-
+    angular.module("app", ['ngRoute'])
+    .config(function ($routeProvider) {
+        $routeProvider.
+        when('/', {
+            templateUrl: 'app/pages/home/home.html',
+            controller: 'homeController'
+        }).
+        when('/about', {
+            templateUrl: 'app/pages/about/about.html',
+            controller: 'aboutController'
+        })
+    });
 })();
